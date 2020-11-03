@@ -23,8 +23,8 @@ For our experiments, we selected the operators and parameters from those availab
 | **Normalization (_N_)** | CO | CO | Standard Scaler | <sub>with_mean: [True, False]<br/>with_std: [True, False]</sub> |
 | | | | Power Transform | |
 | | | | Min Max Transform | |
-| | | | Robust Scaler | <sub>quantile_range: [(25,75), (10,90), (5,95)]<br/>with_centering: [True, False]<br/>with_scaling: [True, False]</sub> |
-| **Discretization (_D_)** | CO | CA | KBins | <sub>n_bins: [3, 5, 7]<br/>encode: ['onehot', 'onehot-dense', 'ord.']<br/>strategy:['uniform', 'quant.', 'kmeans']</sub> |
+| | | | Robust Scaler | <sup><sub>quantile_range: [(25,75), (10,90), (5,95)]<br/>with_centering: [True, False]<br/>with_scaling: [True, False]</sub></sup> |
+| **Discretization (_D_)** | CO | CA | KBins | <sup><sub>n_bins: [3, 5, 7]<br/>encode: ['onehot', 'onehot-dense', 'ord.']<br/>strategy:['uniform', 'quant.', 'kmeans']</sub></sup> |
 | | | | Binarization | threshold: [0, 0.5, 2, 5] |
 | **Imputation(_I_)** | CA/CO | CA/CO | Univariate | strategy: ['most_freq.', 'constant'] |
 | | | | Multivariate | <sub>initial_strategy: ['most_freq', 'const.']<br/>order: ['asc', 'dsc','rom', 'arab', 'rand']</sub> |
