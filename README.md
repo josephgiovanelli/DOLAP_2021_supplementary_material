@@ -20,17 +20,17 @@ For our experiments, we selected the operators and parameters from those availab
 |---|---|---|---|---|
 | **Encoding (_E_)** | CA | CO | Ordinal Encoder | |
 | | | | One Hot Encoder | |
-| **Normalization (_N_)** | CO | CO | Standard Scaler | <ul><li>with_mean: [True, False]</li><li>with_std: [True, False]</li></ul> |
+| **Normalization (_N_)** | CO | CO | Standard Scaler | with_mean: [True, False]<br/>with_std: [True, False] |
 | | | | Power Transform | |
 | | | | Min Max Transform | |
-| | | | Robust Scaler | <ul><li>quantile_range: [(25,75), (10,90), (5,95)]</li><li>with_centering: [True, False]</li><li>with_scaling: [True, False]</li></ul> |
-| **Discretization (_D_)** | CO | CA | KBins | <ul><li>n_bins: [3, 5, 7]</li><li>encode: ['onehot', 'onehot-dense', 'ord.']</li><li>strategy:['uniform', 'quant.', 'kmeans']</li></ul> |
+| | | | Robust Scaler | quantile_range: [(25,75), (10,90), (5,95)]<br/>with_centering: [True, False]<br/>with_scaling: [True, False] |
+| **Discretization (_D_)** | CO | CA | KBins | n_bins: [3, 5, 7]<br/>encode: ['onehot', 'onehot-dense', 'ord.']<br/>strategy:['uniform', 'quant.', 'kmeans'] |
 | | | | Binarization | threshold: [0, 0.5, 2, 5] |
 | **Imputation(_I_)** | CA/CO | CA/CO | Univariate | strategy: ['most_freq.', 'constant'] |
-| | | | Multivariate | <ul><li>initial_strategy: ['most_freq', 'const.']</li><li>order: ['asc', 'dsc', 'rom', 'arab', 'rand']</li></ul> |
+| | | | Multivariate | initial_strategy: ['most_freq', 'const.']<br/>order: ['asc', 'dsc','rom', 'arab', 'rand'] |
 | **Rebalancing (_R_)** | CA/CO | CA/CO | Near Miss | n_neighbors:[1, 2, 3] |
 | | | | Condensed KNN | n_neighbors:[1, 2, 3] |
 | | | | SMOTE | k_neighbors: [5, 6, 7] |
 | **Feature Engineering (_F_)** | CA/CO | CA/CO | PCA | n_components: [1, 2, 3, 4] |
 | | | | Select K Best | k: [1, 2, 3, 4] |
-| | | | PCA + Select K Best | <ul><li>n_components: [1, 2, 3, 4]</li><li>k: [1, 2, 3, 4]</li></ul> |
+| | | | PCA + Select K Best | n_components: [1, 2, 3, 4]<br/>k: [1, 2, 3, 4] |
