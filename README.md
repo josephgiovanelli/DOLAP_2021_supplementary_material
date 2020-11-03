@@ -20,17 +20,17 @@ For our experiments, we selected the operators and parameters from those availab
 |---|---|---|---|---|
 | **Encoding (_E_)** | CA | CO | Ordinal Encoder | |
 | | | | One Hot Encoder | |
-| **Normalization (_N_)** | CO | CO | Standard Scaler | <li>with_mean: [True, False]<li>with_std: [True, False] |
+| **Normalization (_N_)** | CO | CO | Standard Scaler | <ul><li>with_mean: [True, False]</li><li>with_std: [True, False]</li></ul> |
 | | | | Power Transform | |
 | | | | Min Max Transform | |
-| | | | Robust Scaler | <li>quantile_range: [(25,75), (10,90), (5,95)]<li/>with_centering: [True, False]<li/>with_scaling: [True, False] |
-| **Discretization (_D_)** | CO | CA | KBins | <li/>n_bins: [3, 5, 7]<li/>encode: ['onehot', 'onehot-dense', 'ord.']<li/>strategy:['uniform', 'quant.', 'kmeans'] |
+| | | | Robust Scaler | <ul><li>quantile_range: [(25,75), (10,90), (5,95)]</li><li>with_centering: [True, False]</li><li>with_scaling: [True, False]</li></ul> |
+| **Discretization (_D_)** | CO | CA | KBins | <ul><li>n_bins: [3, 5, 7]</li><li>encode: ['onehot', 'onehot-dense', 'ord.']</li><li>strategy:['uniform', 'quant.', 'kmeans']</li></ul> |
 | | | | Binarization | threshold: [0, 0.5, 2, 5] |
 | **Imputation(_I_)** | CA/CO | CA/CO | Univariate | strategy: ['most_freq.', 'constant'] |
-| | | | Multivariate | <li/>initial_strategy: ['most_freq', 'const.']<li/>order: ['asc', 'dsc', 'rom', 'arab', 'rand'] |
+| | | | Multivariate | <ul><li>initial_strategy: ['most_freq', 'const.']</li><li>order: ['asc', 'dsc', 'rom', 'arab', 'rand']</li></ul> |
 | **Rebalancing (_R_)** | CA/CO | CA/CO | Near Miss | n_neighbors:[1, 2, 3] |
 | | | | Condensed KNN | n_neighbors:[1, 2, 3] |
 | | | | SMOTE | k_neighbors: [5, 6, 7] |
 | **Feature Engineering (_F_)** | CA/CO | CA/CO | PCA | n_components: [1, 2, 3, 4] |
 | | | | Select K Best | k: [1, 2, 3, 4] |
-| | | | PCA + Select K Best | <li/>n_components: [1, 2, 3, 4]<li/>k: [1, 2, 3, 4] |
+| | | | PCA + Select K Best | <ul><li>n_components: [1, 2, 3, 4]</li><li>k: [1, 2, 3, 4]</li></ul> |
