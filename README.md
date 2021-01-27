@@ -39,6 +39,38 @@ For our experiments, we selected the operators and parameters from those availab
 
 ## Experiments results
 
+### Universal pipeline prototypes
+
+For each algorithm it has been provided the number of cases for which a prototype achieved the best performace.
+
+|Prototypes IDs|KNN|NB |RF |
+|--------------|---|---|---|
+|1             |6  |9  |3  |
+|2             |6  |9  |4  |
+|3             |1  |6  |3  |
+|4             |4  |3  |4  |
+|5             |3  |4  |5  |
+|6             |2  |2  |1  |
+|7             |1  |1  |2  |
+|8             |2  |2  |5  |
+|9             |4  |1  |0  |
+|10            |0  |2  |0  |
+|11            |3  |1  |0  |
+|12            |4  |2  |3  |
+|13            |0  |1  |1  |
+|14            |4  |0  |3  |
+|15            |0  |0  |1  |
+|16            |0  |0  |3  |
+|17            |3  |1  |2  |
+|18            |2  |0  |2  |
+|19            |0  |4  |2  |
+|20            |1  |3  |1  |
+|21            |1  |1  |1  |
+|22            |1  |1  |4  |
+|23            |5  |0  |1  |
+|24            |2  |2  |4  |
+
+
 ###  Exhaustive versus effective prototypes
 
 |OpenML dataset ID|Algorithm|Acc (d_exhaustive,a*)|Acc (d_effective,a*)|Acc (d,a)|Normalized distance|
