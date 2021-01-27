@@ -41,7 +41,7 @@ For our experiments, we selected the operators and parameters from those availab
 
 ###  Exhaustive versus effective prototypes
 
-|OpenML dataset ID|Algorithm|Acc(d_exhaustive,a*)|Acc(d_effective,a*)|Acc(d,a)|Normalized distance|
+|OpenML dataset ID|Algorithm|Acc (d_exhaustive,a*)|Acc (d_effective,a*)|Acc (d,a)|Normalized distance|
 |-----------------|---------|--------------------|-------------------|--------|-------------------|
 |3                |KNN      |88.12               |87.21              |79.22   |0.90               |
 |                 |NB       |88.07               |78.05              |59.17   |0.65               |
@@ -214,7 +214,7 @@ For our experiments, we selected the operators and parameters from those availab
 
 ###  Complementing hyper-parameter optimization with pre-processing
 
-|OpenML dataset ID|Algorithm|Acc(d_effective,a*)|Acc(d,a*)|Acc(d,a)|hp impact|pp impact|Normalized hp impact|Normalized pp impact|
+|OpenML dataset ID|Algorithm|Acc (d_effective,a*)|Acc (d,a*)|Acc (d,a)|hp impact|pp impact|Normalized hp impact|Normalized pp impact|
 |-----------------|---------|-------------------|---------|--------|---------|---------|--------------------|--------------------|
 |3                |KNN      |87.21              |80.12    |79.22   |0.11     |1.00     |0.10                |0.90                |
 |                 |NB       |78.05              |76.08    |59.17   |0.90     |1.00     |0.47                |0.53                |
